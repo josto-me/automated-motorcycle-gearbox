@@ -1,0 +1,9 @@
+Thumbs.db
+~$*
+*.bak
+*.elf
+*.hex
+*.map
+*.o
+test/test_drum_position
+cmsis/

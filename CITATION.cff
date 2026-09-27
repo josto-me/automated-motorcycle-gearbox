@@ -1,0 +1,34 @@
+cff-version: 1.2.0
+message: "If you use or change this work, please cite it as below."
+title: "Automated Motorcycle Gearbox"
+type: software
+authors:
+  - family-names: Stockhammer
+    given-names: Johannes
+    orcid: "https://orcid.org/0009-0008-4263-5369"
+repository-code: "https://github.com/josto-me/automated-motorcycle-gearbox"
+url: "https://josto.me"
+doi: "10.5281/zenodo.23002656"
+version: "1.0.0"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+keywords:
+  - motorcycle
+  - automated gearbox
+  - shift drum actuator
+  - position control
+  - SAMD21
+  - shift time
+  - dataset
+references:
+  - type: thesis
+    title: "Entwickeln eines automatisierten Schaltgetriebes für Motorräder – Elektromechanischer Direktantrieb der Schaltwalze über ein selbsthemmendes Schneckengetriebe"
+    authors:
+      - family-names: Stockhammer
+        given-names: Johannes
+        orcid: "https://orcid.org/0009-0008-4263-5369"
+    institution:
+      name: "Westsächsische Hochschule Zwickau"
+    year: 2019
+    thesis-type: "Diplomarbeit"

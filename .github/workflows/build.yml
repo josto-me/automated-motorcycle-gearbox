@@ -1,0 +1,29 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  firmware:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain and CMSIS headers
+        run: |
+          sudo apt-get update && sudo apt-get install -y gcc-arm-none-eabi libnewlib-arm-none-eabi
+          git clone --depth 1 https://github.com/arduino/ArduinoModule-CMSIS-Atmel.git cmsis/CMSIS-Atmel-repo
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/ARM-software/CMSIS_5.git cmsis/CMSIS_5
+          git -C cmsis/CMSIS_5 sparse-checkout set CMSIS/Core/Include
+      - name: Build firmware
+        run: make -C firmware/Shift_Actuator CMSIS_ATMEL=$GITHUB_WORKSPACE/cmsis/CMSIS-Atmel-repo/CMSIS-Atmel/CMSIS/Device/ATMEL CMSIS_CORE=$GITHUB_WORKSPACE/cmsis/CMSIS_5/CMSIS/Core/Include
+  host-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Drum position test
+        run: |
+          cd test
+          gcc -Wall -Wextra -I../firmware/Shift_Actuator -o test_drum_position test_drum_position.c ../firmware/Shift_Actuator/Drum_Position.c ../firmware/Shift_Actuator/global.c
+          ./test_drum_position
