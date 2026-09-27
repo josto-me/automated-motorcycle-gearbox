@@ -1,6 +1,6 @@
 # Automated Motorcycle Gearbox
 
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23002656-blue.svg)](https://doi.org/10.5281/zenodo.23002656) [![Build](https://github.com/josto-me/automated-motorcycle-gearbox/actions/workflows/build.yml/badge.svg)](https://github.com/josto-me/automated-motorcycle-gearbox/actions/workflows/build.yml) [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue.svg)](LICENSE) [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-CC-BY-4.0.txt) [![Cite](https://img.shields.io/badge/cite-CITATION.cff-green.svg)](CITATION.cff)
+[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.23002655-blue.svg)](https://doi.org/10.5281/zenodo.23002655) [![Build](https://github.com/josto-me/automated-motorcycle-gearbox/actions/workflows/build.yml/badge.svg)](https://github.com/josto-me/automated-motorcycle-gearbox/actions/workflows/build.yml) [![Code: Apache-2.0](https://img.shields.io/badge/code-Apache--2.0-blue.svg)](LICENSE) [![Data: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-lightgrey.svg)](LICENSE-CC-BY-4.0.txt) [![Cite](https://img.shields.io/badge/cite-CITATION.cff-green.svg)](CITATION.cff)
 
 Automatisiertes Schaltgetriebe für Motorräder, Diplomarbeit an der WHZ Zwickau.
 
